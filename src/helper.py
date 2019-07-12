@@ -1,5 +1,5 @@
-'''讓index做為id，並獨立存在同一欄內'''
 def index_as_id(data_frame, suffix):
+    '''讓index做為id，並獨立存在同一欄內'''
 
     data_frame[suffix + '_id'] = data_frame.index
     
