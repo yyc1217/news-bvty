@@ -13,7 +13,7 @@ class ReaderWeightHolder:
     # 保留多久以前的權重
     reader_pass_weight_window = 10
 
-    def __init__(self, readers, init_mean, reader_pass_weight_window):
+    def __init__(self, readers, init_mean, reader_pass_weight_window = 10):
         self.readers = readers
         self.reader_pass_weight_window = reader_pass_weight_window
         self.init_mean = init_mean
