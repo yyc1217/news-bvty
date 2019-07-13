@@ -35,11 +35,16 @@ def draw_reporter_scores(scale, data, reporters, reporter_scores, reporter_weigh
     plt.show()
 
 def draw_user_weights(scale, weights):
+    '''視覺化讀者可信度'''
+
     weights = list(weights)
 
     origin = list([scale.mean]) * len(weights)
     
+    # 計算後的讀者權重
     plt.plot(weights)
+
+    # 原始權重
     plt.plot(origin, 'k--', label = 'real', c = '0.55')
 
     plt.xticks(np.arange(0, len(weights), 1.0))
